@@ -9,7 +9,7 @@ srand(time());
 for ($iteratorRun = 1; $iteratorRun < $Runs; $iteratorRun++) {
     $Chosen = $Options[array_rand($Options)];
     $Winner = $Options[array_rand($Options)];
-    // Reveal a loser door.
+    // Reveal a worthless door.
     $rDiff = array_diff($Options, [$Winner, $Chosen]);
     $Reveal = $rDiff[array_rand($rDiff)];
     // Switch to a remaining door.
